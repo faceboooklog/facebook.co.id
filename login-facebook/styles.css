@@ -1,0 +1,126 @@
+/* Reset some default browser styles */
+body, h1, form, input, a, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.login-logo img {
+    width: 350px;
+max-width: 500px;
+    /* height: 30px; */
+    /* margin-bottom: 200px; */
+    margin-bottom: 40px;
+    /* font-size: 50px; */
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #1558c8;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signup-section {
+    margin-top: 20px;
+}
+
+.signup-section p {
+    font-size: 14px;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+}
+
+.signup-button:hover {
+    background-color: #36a420;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .login-logo img {
+        width: 120px;
+    }
+
+    .login-button, .signup-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-form .form-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

